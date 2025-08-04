@@ -51,14 +51,9 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               {/* Book info */}
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-foreground">
+                <h2 className="text-3xl text-foreground">
                   El libro que nos hubiese gustado leer cuando empezamos a emprender
                 </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Descubre los secretos del emprendimiento con una perspectiva única y práctica. 
-                  Este libro te guiará a través de las lecciones más importantes que todo 
-                  emprendedor necesita conocer.
-                </p>
                 
                 {/* Features */}
                 <div className="space-y-3">
