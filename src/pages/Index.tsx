@@ -52,24 +52,9 @@ const Index = () => {
               {/* Book info */}
               <div className="space-y-6">
                 <h2 className="text-3xl text-foreground">
-                  El libro que nos hubiese gustado leer cuando empezamos a emprender
+                  El libro que nos hubiese gustado leer cuando <span className="text-primary">empezamos a emprender</span>
                 </h2>
                 
-                {/* Features */}
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3">
-                    <Star className="w-5 h-5 text-primary" />
-                    <span className="text-foreground">Experiencias reales de emprendedores</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Users className="w-5 h-5 text-primary" />
-                    <span className="text-foreground">Estrategias probadas en el mercado</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Download className="w-5 h-5 text-primary" />
-                    <span className="text-foreground">Acceso inmediato en formato PDF</span>
-                  </div>
-                </div>
 
                 {/* Alien graphics from the book */}
                 <div className="flex justify-center mt-8">
