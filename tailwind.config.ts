@@ -52,13 +52,10 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'alien-green': {
-					DEFAULT: 'hsl(var(--alien-green))',
-					dark: 'hsl(var(--alien-green-dark))',
-					light: 'hsl(var(--alien-green-light))'
-				},
-				'space-black': 'hsl(var(--space-black))',
-				'space-gray': 'hsl(var(--space-gray))',
+				'book-red': 'hsl(var(--book-red))',
+				'book-black': 'hsl(var(--book-black))',
+				'book-white': 'hsl(var(--book-white))',
+				'book-gray': 'hsl(var(--book-gray))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -113,13 +110,12 @@ export default {
 				'pulse-green': 'pulse-green 2s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'gradient-alien': 'var(--gradient-alien)',
-				'gradient-space': 'var(--gradient-space)',
-				'gradient-glow': 'var(--gradient-glow)'
+				'gradient-book': 'var(--gradient-book)',
+				'gradient-subtle': 'var(--gradient-subtle)'
 			},
 			boxShadow: {
-				'alien-glow': 'var(--shadow-alien-glow)',
-				'card-space': 'var(--shadow-card)'
+				'book': 'var(--shadow-book)',
+				'card': 'var(--shadow-card)'
 			}
 		}
 	},

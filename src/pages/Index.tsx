@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Download, Star, Users } from "lucide-react";
-import ufoIcon from "@/assets/ufo-icon.png";
-import alienIcon from "@/assets/alien-icon.png";
 
 const Index = () => {
   const handleDownload = () => {
@@ -12,13 +10,13 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-space relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-subtle relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-4 h-4 bg-alien-green rounded-full animate-pulse-green"></div>
-        <div className="absolute top-40 right-20 w-2 h-2 bg-alien-green rounded-full animate-pulse-green delay-1000"></div>
-        <div className="absolute bottom-32 left-1/4 w-3 h-3 bg-alien-green rounded-full animate-pulse-green delay-2000"></div>
-        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-alien-green rounded-full animate-pulse-green delay-500"></div>
+        <div className="absolute top-20 left-10 w-3 h-3 bg-primary/20 rounded-full animate-pulse"></div>
+        <div className="absolute top-40 right-20 w-2 h-2 bg-primary/30 rounded-full animate-pulse delay-1000"></div>
+        <div className="absolute bottom-32 left-1/4 w-2 h-2 bg-primary/25 rounded-full animate-pulse delay-2000"></div>
+        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-primary/40 rounded-full animate-pulse delay-500"></div>
       </div>
 
       <div className="container mx-auto px-4 py-16 relative z-10">
@@ -26,30 +24,30 @@ const Index = () => {
         <div className="text-center mb-16">
           <div className="flex justify-center items-center gap-4 mb-6">
             <img 
-              src={alienIcon} 
+              src="/lovable-uploads/2074b0ad-cc4e-4ca6-92f8-1e9ac22525f5.png"
               alt="Alien" 
-              className="w-12 h-12 animate-float filter invert"
+              className="w-12 h-12 animate-float"
             />
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-alien bg-clip-text text-transparent">
-              El Arte de
+            <h1 className="text-5xl md:text-7xl font-bold text-primary">
+              El arte
             </h1>
             <img 
-              src={ufoIcon} 
+              src="/lovable-uploads/2074b0ad-cc4e-4ca6-92f8-1e9ac22525f5.png"
               alt="UFO" 
-              className="w-12 h-12 animate-float delay-1000 filter invert"
+              className="w-12 h-12 animate-float delay-1000"
             />
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4">
-            Emprender
+          <h1 className="text-4xl md:text-6xl font-bold text-book-black mb-4">
+            de emprender
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-book-gray max-w-2xl mx-auto">
             Por Maxi Sobotowicz y Martín Navarro
           </p>
         </div>
 
         {/* Main content */}
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-card/50 backdrop-blur-sm border-space-gray shadow-card-space p-8 md:p-12">
+          <Card className="bg-card border-border shadow-card p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               {/* Book info */}
               <div className="space-y-6">
@@ -77,18 +75,26 @@ const Index = () => {
                     <span className="text-foreground">Acceso inmediato en formato PDF</span>
                   </div>
                 </div>
+
+                {/* Alien graphics from the book */}
+                <div className="flex justify-center mt-8">
+                  <img 
+                    src="/lovable-uploads/e898aa9c-e7e0-4a82-b7ff-683e69aae8bf.png"
+                    alt="Aliens del libro" 
+                    className="w-48 h-auto opacity-80"
+                  />
+                </div>
               </div>
 
               {/* Download section */}
               <div className="text-center space-y-6">
                 <div className="relative">
-                  <div className="bg-gradient-glow absolute inset-0 rounded-lg blur-xl opacity-50"></div>
-                  <div className="relative bg-card border border-primary/20 rounded-lg p-8">
+                  <div className="relative bg-card border-2 border-primary/10 rounded-lg p-8 hover:border-primary/20 transition-colors">
                     <div className="flex justify-center mb-4">
                       <img 
-                        src={ufoIcon} 
+                        src="/lovable-uploads/2074b0ad-cc4e-4ca6-92f8-1e9ac22525f5.png"
                         alt="UFO" 
-                        className="w-16 h-16 animate-glow filter invert"
+                        className="w-16 h-16 animate-float"
                       />
                     </div>
                     <h3 className="text-2xl font-bold text-foreground mb-4">
@@ -99,7 +105,7 @@ const Index = () => {
                     </p>
                     <Button 
                       onClick={handleDownload}
-                      variant="alien"
+                      variant="book"
                       size="lg"
                       className="w-full text-lg py-6"
                     >
@@ -121,15 +127,15 @@ const Index = () => {
         <div className="text-center mt-16">
           <div className="flex justify-center items-center gap-2 text-muted-foreground">
             <img 
-              src={alienIcon} 
+              src="/lovable-uploads/2074b0ad-cc4e-4ca6-92f8-1e9ac22525f5.png"
               alt="Alien" 
-              className="w-6 h-6 animate-pulse-green filter invert opacity-70"
+              className="w-6 h-6 animate-pulse opacity-70"
             />
             <p>Una producción extraterrestre de conocimiento emprendedor</p>
             <img 
-              src={alienIcon} 
+              src="/lovable-uploads/2074b0ad-cc4e-4ca6-92f8-1e9ac22525f5.png"
               alt="Alien" 
-              className="w-6 h-6 animate-pulse-green delay-1000 filter invert opacity-70"
+              className="w-6 h-6 animate-pulse delay-1000 opacity-70"
             />
           </div>
         </div>

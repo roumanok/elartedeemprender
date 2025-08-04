@@ -8,49 +8,47 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 8%;
-    --foreground: 120 100% 85%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 15%;
 
-    --card: 0 0% 12%;
-    --card-foreground: 120 100% 85%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 15%;
 
-    --popover: 0 0% 12%;
-    --popover-foreground: 120 100% 85%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
 
-    --primary: 120 100% 70%;
-    --primary-foreground: 0 0% 8%;
+    --primary: 348 87% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 120 100% 85%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 15%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 120 20% 65%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 120 100% 60%;
-    --accent-foreground: 0 0% 8%;
+    --accent: 348 87% 55%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 120 100% 70%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 348 87% 55%;
 
-    /* Custom alien theme tokens */
-    --alien-green: 120 100% 70%;
-    --alien-green-dark: 120 100% 50%;
-    --alien-green-light: 120 80% 85%;
-    --space-black: 0 0% 8%;
-    --space-gray: 0 0% 15%;
+    /* Custom book theme tokens */
+    --book-red: 348 87% 55%;
+    --book-black: 0 0% 15%;
+    --book-white: 0 0% 100%;
+    --book-gray: 0 0% 45%;
     
     /* Gradients */
-    --gradient-alien: linear-gradient(135deg, hsl(120 100% 70%), hsl(120 100% 50%));
-    --gradient-space: linear-gradient(180deg, hsl(0 0% 8%), hsl(0 0% 12%));
-    --gradient-glow: radial-gradient(circle at center, hsl(120 100% 70% / 0.3), transparent 70%);
+    --gradient-book: linear-gradient(135deg, hsl(348 87% 55%), hsl(348 87% 65%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
 
     /* Shadows */
-    --shadow-alien-glow: 0 0 30px hsl(120 100% 70% / 0.5);
-    --shadow-card: 0 10px 30px hsl(0 0% 0% / 0.3);
+    --shadow-book: 0 10px 30px hsl(0 0% 0% / 0.1);
+    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.08);
 
     --radius: 0.5rem;
 
