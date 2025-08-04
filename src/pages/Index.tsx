@@ -37,7 +37,7 @@ const Index = () => {
               className="w-12 h-12 animate-float delay-1000"
             />
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-book-black mb-4">
+          <h1 className="text-4xl md:text-6xl text-book-black mb-4 -mt-2">
             de emprender
           </h1>
           <p className="text-xl text-book-gray max-w-2xl mx-auto">
