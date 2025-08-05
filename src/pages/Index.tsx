@@ -59,8 +59,8 @@ const Index = () => {
                 {/* Alien graphics from the book */}
                 <div className="flex justify-center mt-8">
                   <img 
-                    src="/lovable-uploads/e898aa9c-e7e0-4a82-b7ff-683e69aae8bf.png"
-                    alt="Aliens del libro" 
+                    src="/lovable-uploads/f5b89927-9d96-4f1d-872e-c77b70ec1222.png"
+                    alt="Portada del libro" 
                     className="w-48 h-auto opacity-80"
                   />
                 </div>
