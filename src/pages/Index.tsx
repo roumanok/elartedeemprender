@@ -4,9 +4,16 @@ import { Download, Star, Users } from "lucide-react";
 
 const Index = () => {
   const handleDownload = () => {
-    // Aquí iría la lógica para descargar el PDF
-    // Por ahora simularemos la descarga
-    window.open("#", "_blank");
+    const pdfUrl = "https://iescwhgsizcbfggnkosu.supabase.co/storage/v1/object/public/elartedeemprender//ElArteDeEmprender.pdf";
+    
+    // Create a temporary link element for download
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'ElArteDeEmprender.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
